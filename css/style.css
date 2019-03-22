@@ -2,7 +2,7 @@ body {
   background: #333;
   color: #fff;
 }
-.logo{
+.logo {
   background: white;
   opacity: 0.9;
   width: 180px;
@@ -16,7 +16,7 @@ body {
 }
 
 #home-section {
-  background: url('../img/home.jpg');
+  background: url("../img/home.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -39,10 +39,8 @@ body {
 #home-section .card-form {
   opacity: 0.7;
 }
-#home-section .card-form ::placeholder{
-  
-    color: white;
-    
+#home-section .card-form ::placeholder {
+  color: white;
 }
 
 #home-section .fas,
@@ -61,10 +59,18 @@ body {
   border-radius: 5px;
 }
 
-.bla{
+.bla {
   margin-top: 1500px;
 }
 
-.hotel img{
+.hotel img {
   border-radius: 90px;
+}
+#about p {
+  text-align: center;
+}
+
+#about img {
+  opacity: 0, 6;
+  margin-top: -50px;
 }
