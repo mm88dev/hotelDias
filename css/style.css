@@ -2,48 +2,56 @@ body {
   background: #333;
   color: #fff;
 }
+
 .logo {
-  background: white;
   opacity: 0.9;
   width: 180px;
-  height: 45px;
+  height: 50px;
   border: 2px solid yellow;
-  border-radius: 100px;
+  box-shadow: 0 0 8px;
+
 }
+
+.aboutHeader {
+  background-color: #45589e;
+  border-radius: 5px;
+}
+
 .navbar {
   border-bottom: #008ed6 3px solid;
   opacity: 0.8;
 }
 
-#home-section {
+#home {
   background: url("../img/home.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 700px;
+  min-height: 560px;
 }
 
-#home-section .dark-overlay {
+#home .dark-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 700px;
+  min-height: 560px;
   background: rgba(0, 0, 0, 0.2);
 }
 
-#home-section .home-inner {
+#home .home-inner {
   padding-top: 150px;
 }
 
-#home-section .card-form {
+#home .card-form {
   opacity: 0.7;
 }
-#home-section .card-form ::placeholder {
+
+#home .card-form ::placeholder {
   color: white;
 }
 
-#home-section .fas,
+#home .fas,
 #create-section .fas {
   color: #008ed6;
   background-color: #fff;
@@ -51,26 +59,64 @@ body {
   border-radius: 5px;
 }
 
-#explore-section .fas,
-#share-section .fas {
+#about .fas {
   background: #333;
   color: white;
   padding: 5px;
   border-radius: 5px;
 }
 
-.bla {
-  margin-top: 1500px;
-}
-
 .hotel img {
   border-radius: 90px;
 }
+
 #about p {
   text-align: center;
 }
 
-#about img {
-  opacity: 0, 6;
-  margin-top: -50px;
+#about {
+  padding-top: 4.5rem;
+  padding-bottom: 2rem;
+}
+
+.aboutHeader {
+  opacity: 0.8;
+}
+.hotelImg{
+  max-height: 300px;
+}
+#gallery {
+  padding-top: 4.5rem;
+  background: #555;
+}
+
+.flag {
+  height: 19px;
+}
+
+.flags {
+  width: 80px;
+  min-width: 0;
+}
+
+#contactModal {
+  opacity: 0.98;
+  background-color: #333;
+}
+
+.info1 h5,
+.info1 h6,
+.info2 h5 {
+  color: #888;
+}
+
+.info1 p,
+.info2 p {
+  font-size: 12px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #bbb;
+}
+
+footer{
+  background-color: #222;
 }
