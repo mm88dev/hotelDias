@@ -127,7 +127,7 @@
       <div class="row">
         <div class="col-md-12">
           <h1 class="aboutHeader text-center pb-1 mb-3">About Us</h1>
-          <p class="p-1">Dias Hotel is a relatively small, family run budget hotel. DIAS’s proprietors Asli & Ayhan
+          <p class="p-1 text-justify">Dias Hotel is a relatively small, family run budget hotel. DIAS’s proprietors Asli & Ayhan
             are
             always ready to make
             yourself at home and enjoy your hosts warm hospitality. You may find yourself sharing a beer with Ayhan or a
@@ -136,7 +136,7 @@
         </div>
         <div class="col-md-12">
           <div class="row">
-            <div class="col-md-4 text-justify">
+            <div class="col-md-8 col-lg-6 col-xl-6 text-justify mt-2">
               Hotel Dias is located at a very popular hotel district of Kusadasi, just a couple minutes away from the
               lively city
               center. Kusadasi is one of the most favorite resorts of Turkey, with her beaches, entertainment, nightlife
@@ -148,10 +148,10 @@
               seven
               churches and many more..
             </div>
-            <div class="col-md-4">
-              <img src="img/hotel.jpg" alt="" class="m-auto hotelImg img-fluid d-none d-md-block img-thumbnail">
+            <div class="col-md-4 col-lg-3 col-xl-3">
+              <img src="img/hotel.jpg" alt="" class="mb-2 hotelImg img-fluid d-none d-md-block img-thumbnail">
             </div>
-            <div class="col-md-4 text-justify">
+            <div class="col-md-12 col-lg-3 col-xl-3  text-justify mt-2">
               A short walk along will lead you to the Kusadasi Town Beach, while just at the corner of Hotel Dias
               minibuses (dolmus)
               are running to the most popular beaches and Ephesus. It is so easy and cheap to travel around Kusadasi
@@ -265,16 +265,15 @@
   <!-- FOOTER -->
   <footer id="contact" class="pt-5">
     <div class="row">
-      <div class="col-4 info1 px-5 pt-3">
+      <div id="contactInfo" class="col-sm-6 col-md-4 info1 px-5 pt-3">
         <h5 class="mb-3">Contact Information</h5>
         <p class="p-0 m-0">
          <strong>Address:</strong> Candan Tarhan Bulvar 1, No:64 09400 Kusadasi - Turkey</p>
         <p class="p-0 m-0"><strong>Tel:</strong> 90-256- 612 3315, 612 2274 </p>
         <p class="p-0 m-0"><strong>Fax:</strong> 90-256-612 331</p>
       </div>
-      <div class="col-4">
-
-        <div class="container">
+      <div id="contactMsg" class="col-sm-6 col-md-4 ">
+       <div class="container">
           <div class="row">
             <div class="col text-center pb-3 pt-5">
               <h3 class="lead display-5 mb-3">Leave your message here!</h3>
@@ -323,7 +322,7 @@
           </div>
         </div>
       </div>
-      <div class="col-4 info2 px-5">
+      <div id="locationInfo" class="col-sm-12 col-md-4 info2 px-5">
         <h5 class="mt-3 mb-3 text-justify">Location Information</h5>
         <p>The closest airport to Kusadasi is ”Izmir Adnan Menderes Airport” which
           is about 40 miles/65 km away from Kusadasi. You may also use the
@@ -344,6 +343,7 @@
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
   <script>
+    
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear())
 
@@ -360,6 +360,21 @@
       event.preventDefault();
       $(this).ekkoLightbox();
     });
+
+
+
+    // // Custom js
+    //   jQuery(document).ready(function () {
+    //     //Hamburger menu toggle
+    //     $('.top-nav-menu ul li a.nav-link').on('click', function () {
+    //       // check if window is small enough so dropdown is created
+    //       var toggle = $(".navbar-toggler-icon").is(":visible");
+    //       if (toggle) {
+    //         $(".navbar-collapse").collapse('hide');
+    //       }
+
+    //     });
+    //   });
 
     // Scroll Spy
     $('body').scrollspy({

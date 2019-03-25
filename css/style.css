@@ -9,7 +9,6 @@ body {
   height: 50px;
   border: 2px solid yellow;
   box-shadow: 0 0 8px;
-
 }
 
 .aboutHeader {
@@ -23,6 +22,7 @@ body {
 }
 
 #home {
+  height: 100vh;
   background: url("../img/home.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -70,11 +70,8 @@ body {
   border-radius: 90px;
 }
 
-#about p {
-  text-align: center;
-}
-
 #about {
+  height: 100vh;
   padding-top: 4.5rem;
   padding-bottom: 2rem;
 }
@@ -82,10 +79,11 @@ body {
 .aboutHeader {
   opacity: 0.8;
 }
-.hotelImg{
+.hotelImg {
   max-height: 300px;
 }
 #gallery {
+  /* height: 100vh; */
   padding-top: 4.5rem;
   background: #555;
 }
@@ -113,10 +111,25 @@ body {
 .info1 p,
 .info2 p {
   font-size: 12px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   color: #bbb;
 }
 
-footer{
+footer {
   background-color: #222;
+}
+
+@media (max-width: 576px) {
+  #contactInfo {
+    width: 100%;
+    text-align: center;
+  }
+  #contactMsg {
+    width: 100%;
+    text-align: center;
+  }
+  #locationInfo {
+    display: none;
+  }
 }
