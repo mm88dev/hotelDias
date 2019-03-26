@@ -9,8 +9,6 @@
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
   <link rel="stylesheet" href="css/style.css">
   <title>Hotel Dias</title>
@@ -38,8 +36,8 @@
             <a href="index.html" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><img
                 class="flag img-fluid" src="img/engl.jpg" alt="english"></a>
             <div class="dropdown-menu flags bg-dark">
-              <a href="#" class="dropdown-item flagLink bg-dark"><img class="flag" src="img/turk.jpg" alt="turkey"></a>
-              <a href="#" class="dropdown-item flagLink bg-dark"><img class="flag" src="img/srp.jpg" alt="srpski"></a>
+              <a href="indexTur.html" class="dropdown-item flagLink bg-dark"><img class="flag" src="img/turk.jpg" alt="turkey"></a>
+              <a href="indexSrp.html" class="dropdown-item flagLink bg-dark"><img class="flag" src="img/srp.jpg" alt="srpski"></a>
             </div>
           </li>
         </ul>
@@ -52,7 +50,7 @@
     <div class="dark-overlay">
       <div class="home-inner container">
         <div class="row">
-          <div class="col-lg-8 d-none d-lg-block">
+          <div class="col-lg-12 d-none d-lg-block home1">
             <h1 class="display-2 text-center">HOTEL DIAS</h1>
             <h2 class="display-4 text-center">Relax Your Mind...</h2>
             <div class="d-flex">
@@ -61,14 +59,14 @@
                 in Kusadasi and stay right in the heart of the city</div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-12 home2">
             <div class="card bg-dark text-center card-form ">
               <div class="card-body ">
                 <h3 class="mb-3 text-white">BOOK
                   YOUR ROOM</h3>
                 <label class="float-left m-0" for="arrive"><small>Arrival Date:</small></label>
                 <div class="form-group input-group m-0">
-                  <input id="arrive" type="date" class="text-white bg-dark form-control form-control-sm"
+                  <input id="arrive" type="date" class="text-white bg-dark form-control "
                     placeholder="Arrival Date">
                   <div id="arriveDiv" class="input-group-append">
                     <span class="input-group-text text-white bg-dark"><i class="far fa-calendar-alt"></i></span>
@@ -76,7 +74,7 @@
                 </div>
                 <label class="float-left m-0" for="depart"><small>Departure Date:</small></label>
                 <div class="form-group input-group">
-                  <input id="depart" type="date" class="text-white bg-dark form-control form-control-sm"
+                  <input id="depart" type="date" class="text-white bg-dark form-control "
                     placeholder="Departure Date">
                   <div id="departDiv" class="input-group-append">
                     <span class="input-group-text text-white bg-dark"><i class="far fa-calendar-alt"></i></span>
@@ -86,7 +84,7 @@
 
                 <div class="d-flex" id="reservation">
                   <div class="form-group mr-2 w-50">
-                    <select class="text-white bg-dark form-control form-control-sm">
+                    <select class="text-white bg-dark form-control ">
                       <option class="bg-secondary">Adults</option>
                       <option>1</option>
                       <option>2</option>
@@ -94,7 +92,7 @@
                     </select>
                   </div>
                   <div class="form-group w-50">
-                    <select class="text-white bg-dark form-control form-control-sm">
+                    <select class="text-white bg-dark form-control ">
                       <option class="bg-secondary">Children</option>
                       <option>1</option>
                       <option>2</option>
@@ -104,7 +102,7 @@
                 </div>
                 <div class="form-group mb-3">
                   <div class="form-group">
-                    <select class="text-white bg-dark form-control form-control-sm">
+                    <select class="text-white bg-dark form-control">
                       <option class="bg-secondary">Room Type</optio>
                       <option>Single</option>
                       <option>Double</option>
@@ -112,7 +110,7 @@
                     </select>
                   </div>
                 </div>
-                <input type="submit" value="Book" class="btn btn-sm btn-outline-primary border btn-block">
+                <input type="submit" value="Book" class="btn btn-lg btn-outline-primary border btn-block">
               </div>
             </div>
           </div>
@@ -126,7 +124,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="aboutHeader text-center pb-1 mb-3">About Us</h1>
+          <h3 class="display-3 aboutHeader text-center pb-1 mb-3">About Us</h3>
           <p class="p-1 text-justify">Dias Hotel is a relatively small, family run budget hotel. DIAS’s proprietors Asli & Ayhan
             are
             always ready to make
@@ -168,94 +166,95 @@
     <div class="container">
       <h1 class="text-center">Photo Gallery</h1>
       <p class="text-center">Check out our photos</p>
+
       <div class="row mb-4 mt-5">
 
         <div class="col-md-2 mb-4">
-          <a href="https://source.unsplash.com/random/560x560" data-toggle="lightbox" data-gallery="img-gallery"
+          <a href="img/pic1.jpg" data-toggle="lightbox" data-gallery="img-gallery"
             data-height="560" data-width="560">
-            <img src="https://source.unsplash.com/random/560x560" alt="" class="img-fluid img-thumbnail">
+            <img src="img/pic1.jpg" alt="" class="img-fluid img-thumbnail">
           </a>
         </div>
 
         <div class="col-md-2 mb-4">
-          <a href="https://source.unsplash.com/random/561x561" data-toggle="lightbox" data-gallery="img-gallery"
+          <a href="img/pic2.jpg" data-toggle="lightbox" data-gallery="img-gallery"
             data-height="561" data-width="561">
-            <img src="https://source.unsplash.com/random/561x561" alt="" class="img-fluid img-thumbnail">
+            <img src="img/pic2.jpg" alt="" class="img-fluid img-thumbnail">
           </a>
         </div>
 
         <div class="col-md-2 mb-4">
-          <a href="https://source.unsplash.com/random/562x562" data-toggle="lightbox" data-gallery="img-gallery"
+          <a href="img/pic3.jpg" data-toggle="lightbox" data-gallery="img-gallery"
             data-height="562" data-width="562">
-            <img src="https://source.unsplash.com/random/562x562" alt="" class="img-fluid img-thumbnail">
+            <img src="img/pic3.jpg" alt="" class="img-fluid img-thumbnail">
           </a>
         </div>
 
 
 
         <div class="col-md-2 mb-4">
-          <a href="https://source.unsplash.com/random/563x563" data-toggle="lightbox" data-gallery="img-gallery"
+          <a href="img/pic4.jpg" data-toggle="lightbox" data-gallery="img-gallery"
             data-height="563" data-width="563">
-            <img src="https://source.unsplash.com/random/563x563" alt="" class="img-fluid img-thumbnail">
+            <img src="img/pic4.jpg" alt="" class="img-fluid img-thumbnail">
           </a>
         </div>
 
         <div class="col-md-2 mb-4">
-          <a href="https://source.unsplash.com/random/564x564" data-toggle="lightbox" data-gallery="img-gallery"
+          <a href="img/pic5.jpg" data-toggle="lightbox" data-gallery="img-gallery"
             data-height="564" data-width="564">
-            <img src="https://source.unsplash.com/random/564x564" alt="" class="img-fluid img-thumbnail">
+            <img src="img/pic5.jpg" alt="" class="img-fluid img-thumbnail">
           </a>
         </div>
 
         <div class="col-md-2">
-          <a href="https://source.unsplash.com/random/565x565" data-toggle="lightbox" data-gallery="img-gallery"
+          <a href="img/pic6.jpg" data-toggle="lightbox" data-gallery="img-gallery"
             data-height="565" data-width="565">
-            <img src="https://source.unsplash.com/random/565x565" alt="" class="img-fluid img-thumbnail">
+            <img src="img/pic6.jpg" alt="" class="img-fluid img-thumbnail">
           </a>
         </div>
       </div>
-      <div class="row">
+      <div class="row pic2 d-none d-md-flex">
         <div class="col-md-2 mb-4">
-          <a href="https://source.unsplash.com/random/560x560" data-toggle="lightbox" data-gallery="img-gallery"
+          <a href="img/pic7.jpg" data-toggle="lightbox" data-gallery="img-gallery"
             data-height="560" data-width="560">
-            <img src="https://source.unsplash.com/random/560x560" alt="" class="img-fluid img-thumbnail">
+            <img src="img/pic7.jpg" alt="" class="img-fluid img-thumbnail">
           </a>
         </div>
 
         <div class="col-md-2 mb-4">
-          <a href="https://source.unsplash.com/random/561x561" data-toggle="lightbox" data-gallery="img-gallery"
+          <a href="img/pic8.jpg" data-toggle="lightbox" data-gallery="img-gallery"
             data-height="561" data-width="561">
-            <img src="https://source.unsplash.com/random/561x561" alt="" class="img-fluid img-thumbnail">
+            <img src="img/pic8.jpg" alt="" class="img-fluid img-thumbnail">
           </a>
         </div>
 
         <div class="col-md-2 mb-4">
-          <a href="https://source.unsplash.com/random/562x562" data-toggle="lightbox" data-gallery="img-gallery"
+          <a href="img/pic9.jpg" data-toggle="lightbox" data-gallery="img-gallery"
             data-height="562" data-width="562">
-            <img src="https://source.unsplash.com/random/562x562" alt="" class="img-fluid img-thumbnail">
+            <img src="img/pic9.jpg" alt="" class="img-fluid img-thumbnail">
           </a>
         </div>
 
 
 
         <div class="col-md-2 mb-4">
-          <a href="https://source.unsplash.com/random/563x563" data-toggle="lightbox" data-gallery="img-gallery"
+          <a href="img/pic10.jpg" data-toggle="lightbox" data-gallery="img-gallery"
             data-height="563" data-width="563">
-            <img src="https://source.unsplash.com/random/563x563" alt="" class="img-fluid img-thumbnail">
+            <img src="img/pic10.jpg" alt="" class="img-fluid img-thumbnail">
           </a>
         </div>
 
         <div class="col-md-2 mb-4">
-          <a href="https://source.unsplash.com/random/564x564" data-toggle="lightbox" data-gallery="img-gallery"
+          <a href="img/pic11.jpg" data-toggle="lightbox" data-gallery="img-gallery"
             data-height="564" data-width="564">
-            <img src="https://source.unsplash.com/random/564x564" alt="" class="img-fluid img-thumbnail">
+            <img src="img/pic11.jpg" alt="" class="img-fluid img-thumbnail">
           </a>
         </div>
 
         <div class="col-md-2">
-          <a href="https://source.unsplash.com/random/565x565" data-toggle="lightbox" data-gallery="img-gallery"
+          <a href="img/pic12.jpg" data-toggle="lightbox" data-gallery="img-gallery"
             data-height="565" data-width="565">
-            <img src="https://source.unsplash.com/random/565x565" alt="" class="img-fluid img-thumbnail">
+            <img src="img/pic12.jpg" alt="" class="img-fluid img-thumbnail">
           </a>
         </div>
       </div>
@@ -263,7 +262,7 @@
   </section>
 
   <!-- FOOTER -->
-  <footer id="contact" class="pt-5">
+  <footer id="contact" class="py-5">
     <div class="row">
       <div id="contactInfo" class="col-sm-6 col-md-4 info1 px-5 pt-3">
         <h5 class="mb-3">Contact Information</h5>
@@ -282,7 +281,7 @@
                 Us</button>
             </div>
           </div>
-          <div class="text-center">
+          <div class="sky text-center">
             <small class="block text-primary">SkyDream Web &copy; <span id="year"></span></small></div>
         </div>
 

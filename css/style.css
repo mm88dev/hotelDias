@@ -14,6 +14,7 @@ body {
 .aboutHeader {
   background-color: #45589e;
   border-radius: 5px;
+  
 }
 
 .navbar {
@@ -22,7 +23,6 @@ body {
 }
 
 #home {
-  height: 100vh;
   background: url("../img/home.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -71,7 +71,6 @@ body {
 }
 
 #about {
-  height: 100vh;
   padding-top: 4.5rem;
   padding-bottom: 2rem;
 }
@@ -79,13 +78,15 @@ body {
 .aboutHeader {
   opacity: 0.8;
 }
+
 .hotelImg {
   max-height: 300px;
 }
+
 #gallery {
-  /* height: 100vh; */
   padding-top: 4.5rem;
   background: #555;
+  cursor: none;
 }
 
 .flag {
@@ -120,16 +121,61 @@ footer {
   background-color: #222;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   #contactInfo {
     width: 100%;
     text-align: center;
   }
+
   #contactMsg {
     width: 100%;
     text-align: center;
   }
+
   #locationInfo {
     display: none;
   }
+
+  .sky {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+
+}
+
+@media (min-width: 992px) {
+  #home {
+    height: 100vh;
+  }
+
+  #home .dark-overlay {
+    height: 100vh;
+  }
+
+  .home1 {
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+  }
+
+  .home2 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  #about {
+    height: 70vh;
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+    font-size: 1.2rem;
+  }
+
+  #about p{
+    margin-top: 2rem;
+  }
+
+  #gallery{
+    height: 60vh;
+  }
+  
+
 }
