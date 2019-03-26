@@ -7,7 +7,7 @@ body {
   opacity: 0.9;
   width: 180px;
   height: 50px;
-  border: 2px solid yellow;
+  border: 2px solid coral;
   box-shadow: 0 0 8px;
 }
 
@@ -24,7 +24,7 @@ body {
 
 #home {
   height: 100vh;
-  background: url("../img/home.jpg");
+  background: url("../img/home2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -80,6 +80,8 @@ body {
 
 .aboutHeader {
   opacity: 0.8;
+  background-color: coral;
+  border: solid coral 6px;
 }
 
 .hotelImg {
@@ -124,10 +126,11 @@ footer {
   background-color: #222;
 }
 
+
+
 @media (max-width: 575px) {
   #contactInfo {
     width: 100%;
-    text-align: center;
   }
 
   #contactMsg {
