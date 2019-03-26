@@ -14,7 +14,7 @@ body {
 .aboutHeader {
   background-color: #45589e;
   border-radius: 5px;
-  
+
 }
 
 .navbar {
@@ -23,6 +23,7 @@ body {
 }
 
 #home {
+  height: 100vh;
   background: url("../img/home.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -31,6 +32,7 @@ body {
 }
 
 #home .dark-overlay {
+  height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -50,6 +52,7 @@ body {
 #home .card-form ::placeholder {
   color: white;
 }
+
 
 #home .fas,
 #create-section .fas {
@@ -143,7 +146,7 @@ footer {
 
 }
 
-@media (min-width: 992px) {
+/* @media (min-width: 1200px) {
   #home {
     height: 100vh;
   }
@@ -169,13 +172,13 @@ footer {
     font-size: 1.2rem;
   }
 
-  #about p{
+  #about p {
     margin-top: 2rem;
   }
 
-  #gallery{
+  #gallery {
     height: 60vh;
   }
-  
 
-}
+
+} */
