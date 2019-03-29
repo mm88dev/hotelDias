@@ -2,7 +2,6 @@ body {
   background: #333;
   color: #fff;
   overflow: unset;
-
 }
 
 .logo {
@@ -16,7 +15,6 @@ body {
 .aboutHeader {
   background-color: #45589e;
   border-radius: 5px;
-
 }
 
 .navbar {
@@ -24,14 +22,12 @@ body {
   opacity: 0.8;
 }
 
-#home {
-  height: 100vh;
-  background: url("../img/home2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  min-height: 560px;
+#slider img {
+  width: inherit;
+  height: -webkit-fill-available;
 }
+
+
 
 #home .dark-overlay {
   height: 100vh;
@@ -54,7 +50,6 @@ body {
 #home .card-form ::placeholder {
   color: white;
 }
-
 
 #home .fas,
 #create-section .fas {
@@ -128,8 +123,6 @@ footer {
   background-color: #222;
 }
 
-
-
 @media (max-width: 575px) {
   #contactInfo {
     width: 100%;
@@ -147,6 +140,17 @@ footer {
   .sky {
     margin-bottom: 2rem;
     margin-top: 1rem;
+  }
+}
+
+@media (max-width: 991px) {
+  #home {
+    background: url("../img/home2.jpg");
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 560px;
   }
 
 }
